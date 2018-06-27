@@ -1,15 +1,17 @@
 # CBN-translation
-["Multi-Mapping Image-to-Image Translation with Central Biasing Normalization"  arXiv preprint arXiv:1806.10050 (2018).](https://arxiv.org/abs/1806.10050)
-Pytorch implementation of *Central Biasing Normalization*  for multi-mapping image-to-image translation.
-<p align="center"><img src='image/overawe.jpg'  align="center" width='90%'></p>
- Multi-Mapping translation  can be classified as multi-domain mapping and multi-modal mapping problems.
-Multi-domain translation focuses on learning  the mappings across differnt attribute domains, such as  the transformation of different hair colors.
-Multi-modal  aims to model a distribution of possible outputs while perform mapping between two specific domains, such as the synthesization  of different style bags by same sketch image.
+
+Pytorch implementation of our paper: ["Multi-Mapping Image-to-Image Translation with Central Biasing Normalization"  arXiv preprint arXiv:1806.10050 (2018).](https://arxiv.org/abs/1806.10050)
+
+<p align="center"><img src='image/first.jpg'  align="center" width='90%'></p>
+Multi-Mapping translation can be classified as:
+
+* Multi-domain translation: learn the mappings across differnt attribute domains, such as  the transformation of different hair colors.
+* Multi-modal translation: model a distribution of possible outputs while perform mapping between two specific domains, such as the synthesization  of different style bags by same sketch image.
+
 <p align="center">
 <img src='image/domain_modal.jpg'  width='50%'> 
 </p>
 
-I will release code and  pretrained models ASAP.
 ## Results
 | Strategy | Description |
 | :---: | --- |
@@ -22,7 +24,7 @@ I will release code and  pretrained models ASAP.
 | :---: | --- |
 |StarGAN[3]| Multi-domain translation model with latent code injection
 |BicycleGAN[4]| Multi-modal translation model with latent code injection
-|Our| Multi-mapping translation model with center biasing normalization
+|Ours| Multi-mapping translation model with center biasing normalization
 
 ### Multi-domain Translation on  Facial Attribute
 <p align="center"><img src='image/face.jpg'  width='80%'></p>
@@ -30,6 +32,9 @@ I will release code and  pretrained models ASAP.
 ### Multi-modal Translation on  Edges2Photos
 <p align="center"><img src='image/shoes.jpg' width='80%'></p>
 
+## Source Code & Pretrained models
+
+Coming soon.
 
 ### Reference
 > 1. *Ioffe S, Szegedy C. Batch normalization: Accelerating deep network training by reducing internal covariate shift[J]. arXiv preprint arXiv:1502.03167, 2015.*
